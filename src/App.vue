@@ -109,9 +109,14 @@
 .img {
   padding: 2px;
   border-radius: 2em;
+  height: 300px;
+  width: 300px;
+  box-shadow: 5px 5px rgb(170, 163, 163);
+}
+
+.img-carousel{
   height: 400px;
   width: 100%;
-  box-shadow: 5px 5px rgb(170, 163, 163);
 }
 
 .pointer {

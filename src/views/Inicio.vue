@@ -6,24 +6,23 @@
         <div>
         <b-carousel
           indicators
-          img-width="1024"
-          img-height="300px"
         >
-          <b-carousel-slide
-            img-src="https://picsum.photos/1024/480/?image=10"
+          <b-carousel-slide class="img-carousel"
+            :img-src="require('../assets/image.jpg')"
           ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://picsum.photos/1024/480/?image=12"
+          <b-carousel-slide class="img-carousel"
+            :img-src="require('../assets/image2.jpg')"
           ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://picsum.photos/1024/480/?image=22"
+          <b-carousel-slide class="img-carousel"
+            :img-src="require('../assets/image3.jpg')"
           ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://picsum.photos/1024/480/?image=12"
+          <b-carousel-slide class="img-carousel"
+            :img-src="require('../assets/image4.jpg')"
           ></b-carousel-slide>
-          <b-carousel-slide
-            img-src="https://picsum.photos/1024/480/?image=22"
+          <b-carousel-slide class="img-carousel"
+            :img-src="require('../assets/image5.jpg')"
           ></b-carousel-slide>
+          
         </b-carousel>
         </div>
       </b-col>
@@ -32,13 +31,11 @@
     <br><br><br><br>
     
     <!-- IMAGE | CARD -->
-    <b-row align-v="center" class="mx-1">
+    <b-row align-h="center" align-v="center" class="mx-1">
       <b-col sm="12" md="6">
-        <b-container fluid class="my-auto">
             <b-link to="whitepage">
-                <b-img src="https://picsum.photos/1024/400/?image=41" class="img pointer" fluid alt="Responsive image"></b-img>
+                <img center src="@/assets/image.jpg"  responsive class="img" >
             </b-link>
-        </b-container>
       </b-col>
       <b-col sm="12" md="6" class="text-center mt-3">
 
@@ -63,7 +60,7 @@
     <b-row align-v="center" class="mt-2">
       <b-col sm="12" >
         <b-link to="whitepage">
-            <b-img src="https://picsum.photos/1024/400/?image=41" class="img pointer" fluid alt="Responsive image"></b-img>
+            <b-img center :src="require('../assets/image.jpg')" class="img-carousel pointer" ></b-img>
         </b-link>
       </b-col>
     </b-row>
