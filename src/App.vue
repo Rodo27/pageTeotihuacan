@@ -142,7 +142,7 @@
   padding-right: 0 !important;
   width: 100% !important;
 }
-
+/*
 @font-face {
   font-family: arial-rounded-mt !important;
   src: url('/assets/fonts/arial-rounded-mt.ttf') format('truetype');
@@ -154,6 +154,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+*/
+@font-face {
+  font-family: 'arial-rounded-mt-bold';
+  src: url('assets/fonts/arial-rounded-mt-bold.ttf') format("truetype");
+
+}
+
+.titles {
+  font-family: 'arial-rounded-mt-bold';
+  background-image: linear-gradient(to right,#EE207B,#0FABB6,#F68B1F,#78C042,#EE2E3A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 .items-nav {
   color:red;
