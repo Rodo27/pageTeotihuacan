@@ -2,7 +2,19 @@
     <b-container fluid>
         <h1><span class="titles">Normatividad</span></h1>
         <b-row align-h="center">
-            <flipbook class="flipbook" :pages="['https://picsum.photos/id/237/200/300','https://picsum.photos/id/238/200/300']"></flipbook>    
+    
+        <Flipbook class="flipbook" :pages="pages" v-slot="flipbook" >
+            
+            <div class=" pt-5">
+                <button class="btn btn-primary mx-3" @click="flipbook.flipLeft"><b-icon icon="arrow-left"></b-icon></button>
+                <button class="btn btn-primary mx-3" @click="flipbook.flipRight"><b-icon icon="arrow-right"></b-icon></button>
+            </div>
+            
+        </Flipbook>
+        
+        <div>
+
+        </div>
         </b-row>
 
         <b-row>
@@ -44,9 +56,39 @@
     </b-container>
 </template>
 
+
 <script>
-import Flipbook from 'flipbook-vue'
+import Flipbook from "flipbook-vue";
+
 export default {
-  components: { Flipbook }
-}
+  components: {
+    Flipbook,
+  },
+  data() {
+    return {
+      
+      pages: [
+        "https://picsum.photos/200/300?id=1",
+        "https://picsum.photos/200/300?id=2",
+        "https://picsum.photos/200/300?id=3",
+        "https://picsum.photos/200/300?id=4",
+        "https://picsum.photos/200/300?id=5",
+        "https://picsum.photos/200/300?id=6",
+        "https://picsum.photos/200/300?id=7",
+        "https://picsum.photos/200/300?id=8",
+      ],
+    };
+  },
+};
 </script>
+
+<style>
+.flipbook .viewport {
+    width: 90vw;
+    height: 90vh;
+}
+.flipbook .bounding-box {
+  box-shadow: 0 0 20px #000;
+}
+
+</style>
