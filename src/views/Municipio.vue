@@ -1,6 +1,14 @@
 <template>
     <div>
-        <h1><span class="text-center titles">Municipio</span></h1>
+        
+        <h1 class="titles">
+          <span style="color:#EE207B">Mu</span>
+          <span style="color:#0FABB6">ni</span>
+          <span style="color:#F68B1F">ci</span>
+          <span style="color:#78C042">p</span>
+          <span style="color:#EE2E3A">io</span>
+        </h1>
+
 
         <div>
             <b-carousel

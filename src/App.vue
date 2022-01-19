@@ -45,32 +45,38 @@
       </b-col>
 
         <b-col sm="12" md="6" lg="3" class="mt-3">
-            <b-card-text>
-            Sitios De Interes
+          <b-card-text>
+            <b>Sitios De Interes</b>
           </b-card-text>
           <b-card-text>
-            Sitio 1
+            <a href="https://www.facebook.com/" class="social-links">
+              <b-icon icon="link" class="social-icons"></b-icon> Sitio 1
+            </a>
           </b-card-text>
           <b-card-text>
-            Sitio 2
+            <a href="https://www.facebook.com/" class="social-links">
+              <b-icon icon="link" class="social-icons"></b-icon> Sitio 2
+            </a>
           </b-card-text>
           <b-card-text>
-            Sitio 3
-          </b-card-text>
-        </b-col>
-
-        <b-col sm="12" md="6" lg="3" class="mt-3">
-          <b-card-text>
-            Aviso De Privacidad
-          </b-card-text>
-          <b-card-text>
-            Terminos y Condiciones
+            <a href="https://www.facebook.com/" class="social-links">
+              <b-icon icon="link" class="social-icons"></b-icon> Sitio 3
+            </a>
           </b-card-text>
         </b-col>
 
         <b-col sm="12" md="6" lg="3" class="mt-3">
           <b-card-text>
-            Redes Sociales
+            <b>Aviso De Privacidad</b> 
+          </b-card-text>
+          <b-card-text>
+            <b>Terminos y Condiciones</b> 
+          </b-card-text>
+        </b-col>
+
+        <b-col sm="12" md="6" lg="3" class="mt-3">
+          <b-card-text>
+            <b>Redes Sociales</b>
           </b-card-text>
           <b-card-text>
             <a href="https://www.facebook.com/" class="social-links"><b-icon icon="facebook" class="social-icons"></b-icon></a>
@@ -92,6 +98,7 @@
 </template>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -125,7 +132,6 @@
 
 .body-content {
   background-color: white;
-  /*background:linear-gradient(#6d8798,#83a2b6,#99bdd5,#afd8f3);*/
 }
 
 .target-card {
@@ -142,19 +148,7 @@
   padding-right: 0 !important;
   width: 100% !important;
 }
-/*
-@font-face {
-  font-family: arial-rounded-mt !important;
-  src: url('/assets/fonts/arial-rounded-mt.ttf') format('truetype');
-}
 
-.titles {
-  font-family: arial-rounded-mt;
-  background-image: linear-gradient(to right,#EE207B,#0FABB6,#F68B1F,#78C042,#EE2E3A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-*/
 @font-face {
   font-family: 'arial-rounded-mt-bold';
   src: url('assets/fonts/arial-rounded-mt-bold.ttf') format("truetype");
@@ -163,20 +157,10 @@
 
 .titles {
   font-family: 'arial-rounded-mt-bold';
-  background-image: linear-gradient(to right,#EE207B,#0FABB6,#F68B1F,#78C042,#EE2E3A);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-
-
 
 .items-nav {
   color:red;
-}
-
-.flipbook {
-  width: 90vw;
-  height: 90vh;
 }
 
 .social-links{ 
@@ -192,6 +176,74 @@
 .icons-cards {
   width: 120px; height: 120px;
 }
+
+
+/* styles flipbook*/
+
+
+.action-bar {
+  width: 100%;
+  height: 30px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action-bar .btn {
+  font-size: 30px;
+  color: #999;
+}
+.action-bar .btn svg {
+  bottom: 0;
+}
+.action-bar .btn:not(:first-child) {
+  margin-left: 10px;
+}
+.has-mouse .action-bar .btn:hover {
+  color: #ccc;
+  filter: drop-shadow(1px 1px 5px #000);
+  cursor: pointer;
+}
+.action-bar .btn:active {
+  filter: none !important;
+}
+.action-bar .btn.disabled {
+  color: #666;
+  pointer-events: none;
+}
+.action-bar .page-num {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+
+.flipbook .viewport {
+  width: 200vw;
+  /*height: calc(100vh - 50px - 40px);*/
+  height: 100vh;
+}
+
+.flipbook {
+  height: 90vh;
+}
+
+.flipbook .bounding-box {
+  box-shadow: 0 0 20px #000;
+}
+
+
+#flipbook-body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #ccc;
+  overflow: hidden;
+}
+
 
 </style>
 
