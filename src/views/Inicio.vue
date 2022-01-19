@@ -165,7 +165,7 @@
     <b-row align-h="center" align-v="center">
       <b-col sm="12" md="6" class="mt-3">
         <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=550&height=837&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipioConTradicionyFuturo&tabs=timeline&width=550&height=837&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1147021662499057"
           width="550"
           height="837"
           style="border: none; overflow: hidden"
@@ -176,21 +176,14 @@
         ></iframe>
       </b-col>
       <b-col sm="12" md="6" class="mt-3">
-        <blockquote class="twitter-tweet">
+        <div style="height: 837px; overflow-y: scroll; width: 550" class="p-5">
           <a
-            href="https://twitter.com/Apple/status/1415673170196013057?ref_src=twsrc%5Etfw"
-          ></a>
-        </blockquote>
+            class="twitter-timeline"
+            href="https://twitter.com/TTeotihuacan?ref_src=twsrc%5Etfw"
+            >Tweets by TTeotihuacan</a
+          >
+        </div>
       </b-col>
     </b-row>
   </div>
 </template>
-
-<script>
-var TwitterWidgetsLoader = require("twitter-widgets");
-export default {
-  mounted() {
-    TwitterWidgetsLoader.load();
-  },
-};
-</script>
