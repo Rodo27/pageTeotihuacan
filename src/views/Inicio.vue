@@ -163,21 +163,50 @@
     <br /><br /><br /><br />
 
     <b-row align-h="center">
-      <b-col sm="12" md="4" class="mt-3">
-        <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          width="340"
-          height="500"
-          style="border: none; overflow: hidden"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
+      <b-col sm="12" md="6" lg="6" class="mt-3">
+        <b-container fluid 
+          style="
+            max-width: 550px;
+            min-width: 350px;
+            height: 837px;
+            overflow-y: scroll;
+            aling: center;
+          "
+
+          class="py-5"
+        
+        >
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMunicipioConTradicionyFuturo&tabs=timeline&width=550&height=837&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1147021662499057"
+            height="837"
+            style="border: none; overflow: hidden; width:100%"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            data-adapt-container-width="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </b-container>
+      </b-col>
+      <b-col sm="12" md="6" lg="6" align-self="center">
+        
+        <b-container fluid
+         style="
+            max-width: 550px;
+            min-width: 350px;
+            height: 837px;
+            overflow-y: scroll;
+          "
+        class="pt-5"  
+        >
+          <a
+            class="twitter-timeline"
+            href="https://twitter.com/ConoceT?ref_src=twsrc%5Etfw"
+            >Tweets by ConoceT</a
+          >
+        </b-container>
+        
       </b-col>
     </b-row>
-
-    
   </div>
 </template>
-
