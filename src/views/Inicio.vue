@@ -162,12 +162,12 @@
 
     <br /><br /><br /><br />
 
-    <b-row align-h="center">
-      <b-col sm="12" md="4" class="mt-3">
+    <b-row align-h="center" align-v="center">
+      <b-col sm="12" md="6" class="mt-3">
         <iframe
-          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-          width="340"
-          height="500"
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=550&height=837&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="550"
+          height="837"
           style="border: none; overflow: hidden"
           scrolling="no"
           frameborder="0"
@@ -175,9 +175,22 @@
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         ></iframe>
       </b-col>
+      <b-col sm="12" md="6" class="mt-3">
+        <blockquote class="twitter-tweet">
+          <a
+            href="https://twitter.com/Apple/status/1415673170196013057?ref_src=twsrc%5Etfw"
+          ></a>
+        </blockquote>
+      </b-col>
     </b-row>
-
-    
   </div>
 </template>
 
+<script>
+var TwitterWidgetsLoader = require("twitter-widgets");
+export default {
+  mounted() {
+    TwitterWidgetsLoader.load();
+  },
+};
+</script>
