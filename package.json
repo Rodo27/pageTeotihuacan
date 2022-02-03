@@ -9,7 +9,7 @@
   "dependencies": {
     "bootstrap": "^5.1.3",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.6.5",
+    "core-js": "^3.21.0",
     "flipbook-vue": "^0.10.4",
     "twitter-widgets": "^2.0.0",
     "vue": "^2.6.14",

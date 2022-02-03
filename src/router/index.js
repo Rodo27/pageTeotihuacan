@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/index.html',
+    redirect: '/inicio'
+  },
+  {
     path: '/',
     redirect: '/inicio'
   },
@@ -24,9 +28,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "normatividad" */ '../views/Normatividad.vue')
   },
   {
-    path: '/tramites',
-    name: 'Tramites',
-    component: () => import(/* webpackChunkName: "tramites" */ '../views/Tramites.vue')
+    path: '/gobierno',
+    name: 'Gobierno',
+    component: () => import(/* webpackChunkName: "tramites" */ '../views/Gobierno.vue')
   },
   {
     path: '/transparencia',

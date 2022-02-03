@@ -1,6 +1,28 @@
 <template>
     <div>
-        
+        <!-- CAROUSEL-->
+    <b-row>
+      <b-col cols="12" >
+        <div>
+          <b-carousel indicators :interval="3000" controls >
+            <b-carousel-slide
+                
+                :img-src="require('../assets/municipio.jpg')"
+                ></b-carousel-slide>
+                <b-carousel-slide
+                
+                :img-src="require('../assets/municipio.jpg')"
+                ></b-carousel-slide>
+                <b-carousel-slide
+                
+                :img-src="require('../assets/municipio.jpg')"
+                ></b-carousel-slide>
+          </b-carousel>
+        </div>
+      </b-col>
+    </b-row>
+    
+        <br>
         <h1 class="titles">
           <span style="color:#EE207B">Mu</span>
           <span style="color:#0FABB6">ni</span>
@@ -11,27 +33,7 @@
 
 
         <div>
-            <b-carousel
-                id="carousel-fade"
-                style="text-shadow: 0px 0px 2px #000"
-                controls
-                indicators
-                img-width="1024"
-                img-height="480"
-            >
-                <b-carousel-slide
-                
-                img-src="https://picsum.photos/1024/480/?image=10"
-                ></b-carousel-slide>
-                <b-carousel-slide
-                
-                img-src="https://picsum.photos/1024/480/?image=12"
-                ></b-carousel-slide>
-                <b-carousel-slide
-                
-                img-src="https://picsum.photos/1024/480/?image=22"
-                ></b-carousel-slide>
-            </b-carousel>
+            
         </div>
     </div>
 </template>
